@@ -256,7 +256,7 @@ func UpdateWallet() {
 	var wallet Wallet
 	wallet.ID, _ = primitive.ObjectIDFromHex("62ab12b10afa5dfd9b9e231f")
 	wallet.Currency = "Dollar"
-	wallet.Amount = 600
+	wallet.Amount = -600
 	wallet.Time = time.Now()
 
 	filter := bson.M{"_id": wallet.ID}
